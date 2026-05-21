@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - El Dorado Turismo</title>
+    <script>
+        // Tus enlaces de Bitly integrados
+        const asesores = [
+            "https://bit.ly/4wJjeNO", // Ely
+            "https://bit.ly/4fzXM7T", // Alice
+            "https://bit.ly/4f0p9b0"  // Adrián
+        ];
+
+        // Función de rotación al cargar la página
+        function redirigir() {
+            const index = Math.floor(Math.random() * asesores.length);
+            window.location.replace(asesores[index]);
+        }
+
+        window.onload = redirigir;
+    </script>
+</head>
+<body style="font-family: sans-serif; text-align: center; margin-top: 20vh; color: #333;">
+    <h2>Conectando con un asesor de El Dorado... ✈️</h2>
+    <p>Serás redirigido automáticamente a WhatsApp en un segundo.</p>
+</body>
+</html>
